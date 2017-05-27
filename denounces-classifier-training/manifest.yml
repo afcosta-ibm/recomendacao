@@ -1,0 +1,5 @@
+applications:
+  name: denounces-classifier-training
+  command: npm start
+  path: .
+  memory: 128M

@@ -1,0 +1,17 @@
+{
+  "name": "denounces-classifier-api",
+  "version": "1.0.0",
+  "description": "Denounces Classifier API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Chiote",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "watson-developer-cloud": "^2.31.1"
+  }
+}

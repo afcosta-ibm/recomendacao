@@ -1,0 +1,11 @@
+declared-services:
+  my-nlc-service:
+    label: natural_language_classifier
+    plan: standard
+applications:
+- services:
+  - my-nlc-service
+  name: denounces-classifier-api
+  command: npm start
+  path: .
+  memory: 128M

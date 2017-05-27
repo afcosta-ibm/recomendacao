@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Denounces Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="app">
+<section id="contact">
+    <div class="section-content">
+        <h1 class="section-header">
+            <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Denounces Classifier</span>
+        </h1>
+        <h3>Classifique sua denuncia:</h3>
+    </div>
+    <div class="contact-section" ng-controller="ClassificationCtrl">
+        <div class="container">
+            <form>
+                <div class="">
+                    <div class="form-group">
+                        <label for="description"> Message</label>
+                        <textarea class="form-control" id="description" placeholder="Enter Your Denounces"
+                                  ng-model="denounces"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-default submit" ng-click="classify()">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i> Send
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <p> Urgência: {{urgency}}</p>
+            <p> Relevância: {{relevance}}</p>
+            <p> Severidade: {{severity}}</p>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="js/classifier.js"></script>
+</body>
+</html>
