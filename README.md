@@ -1,18 +1,17 @@
-<p align="center">
-<b><a href="#getting-started">Getting Started</a></b>
-|
-<b><a href="#downloads">Download</a></b>
-|
-<b><a href="#known-issues">Known Issues</a></b>
-|
-<b><a href="#filing-issues--feature-requests">Bugs/Feature Requests</a></b>
-|
-<b><a href="#plugin-development">Plugin Development</a></b>
-|
-<b><a href="#contributing--build-instructions">Contributing</a></b>
-</p>
+# Ferramenta de Classificação de Relatos de Crimes Ambientais
 
-<img src="" alt="logo" height="100" align="left"/>
+A ferramenta de classificação de relatos de crimes ambientais processa textos com denuncias na forma de dados não-estruturados e em linguagem natural, classificando-as e três dimensões: Severidade, Urgência e Relevância.
+
+Para realizar este trabalho, a ferrmenta utiliza  
+
+
+Natural Language Classifier aplica técnicas de aprendizagem profunda para fazer previsões sobre as melhores classes predefinidas para frases curtas ou frases.
+
+Interpretar e classificar a linguagem natural com confiança
+
+O serviço de Classificador de Linguagem Natural compreende a intenção por trás do texto e retorna uma classificação correspondente, completa com uma pontuação de confiança. Por exemplo "Como está o tempo hoje? Ou "Está quente para fora?" Ou "Está indo ser agradável hoje?" São todas as maneiras de perguntar sobre a "temperatura". Use o NLC para responder a perguntas em um contact center, criar chatbots, categorizar volumes de conteúdo escrito e muito mais.
+
+O serviço de Classificador de Linguagem Natural IBM Watson ™ aplica técnicas de aprendizagem profunda para fazer previsões sobre as melhores classes predefinidas para sentenças ou frases curtas. As classes podem acionar uma ação correspondente em um aplicativo, como direcionar um pedido para um local ou pessoa ou responder a uma pergunta. Após o treinamento, o serviço retorna informações para textos que não tenha visto antes. A resposta inclui o nome das classes superiores e valores de confiança.
 
 # Cloud Foundry CLI
 
