@@ -1,26 +1,14 @@
 # Ferramenta de Classificação de Relatos de Crimes Ambientais
 
-A ferramenta de classificação de relatos de crimes ambientais processa denuncias na forma de texto livre em linguagem natural. Para realizar a análise dos dados não-estruturados, a ferramenta utiliza técnicas de aprendizagem profunda (deep learning) para interpretar e inferir com confiança uma classificação sobre sentenças ou frases curtas. 
+A ferramenta de classificação de relatos de crimes ambientais processa denuncias na forma de texto livre em linguagem natural. Seu objetivo é permitir a realização de ações preditivas, como encaminhar as denuncias dos usuários para as pessoas corretas de acordo com sua classificação. Para realizar a análise dos dados não-estruturados, a ferramenta utiliza técnicas de aprendizagem profunda (deep learning) para interpretar e inferir com confiança uma classificação sobre sentenças ou frases curtas.
 
-As denuncias são classificandas em três dimensões: Severidade, Urgência e Relevância.
+As denuncias são classificandas em três dimensões: Severidade, Urgência e Relevância. A severidade é relativo à intensidade do impacto do crime relatado. A urgência é relativo à rapidez com que a denuncia deve ser apurada. A relevância é relativo à abrangência de impacto do crime relatado. Cada dimensão possui uma escala de cinco níveis: Muito Baixo, Baixo, Médio, Alto e Muito Alto. A combinação dos níveis de cada dimensão determinam a pontuação da denuncia que pode variar de 0 à 125.
 
-Severidade
-Urgência
-Relevância
-Valor
- 
-Assim, é possível utilizar esta ferramenta para realizar ações preditivas, como encaminhar as denuncias dos usuários para as pessoas corretas de acordo com sua classificação.
+A ferramenta está dividida em três módulos: Treinamento, Serviço e Cliente. O módulo de treinamento é responsável por ensinar a ferramenta a interpretar e classificar denuncias de crimes ambientais. No processo de treinamento, a ferramenta cria três domínios de conhecimento, relativo as dimenões de classificação. A ferramenta aprende analisando exemplos previamente elaborados a partir do código ambiental do estado do Rio de Janeiro. Após o treinamento, o módulo de serviço passa a ser capaz de tratar textos inéditos. 
 
+O módulo serviço fornece uma API Restful para que sistemas coletores de denuncias possam classificar os relatos de crimes. Este serviço recebe como entrada o texto da denuncia e retorna a classificação nas três dimensões e a pontuação da denuncia. O módulo cliente fornece uma interface de usuário simples para apresentação da ferramenta.
 
-A ferramenta está dividida em três módulos: Treinamento, Serviço e Cliente. 
+Para realizar este trabalho, a ferrmenta utiliza a API Natural Language Classifier do IBM Watson™. Este serviço compreende a intenção por trás do texto. Por exemplo "Como está o tempo hoje? Ou "Está quente para fora?" Ou "Está indo ser agradável hoje?" São todas as maneiras de perguntar sobre a "temperatura". 
 
-O módulo de treinamento é responsável por ensinar a ferramenta a interprer e classificar denuncias de crimes ambientais. No processo de treinamento, a ferramenta cria três domínios de conhecimento, relativo as dimenões de classificação. A partir de exemplos, a ferramenta aprende como interpretar e classificar. Após o treinamento, o módulo de serviço passa a ser capaz de interpretar e classificar textos inéditos para a ferramenta. 
-
-O módulo serviço fornece uma API Restful para que sistemas coletores de denuncias possam classificar os relatos de crimes. 
-
-O módulo cliente fornece uma interface de usuário simples para apresentação da ferramenta.
-
-Para realizar este trabalho, a ferrmenta utiliza a API Natural Language Classifier do IBM Watson™. Este serviço compreende a intenção por trás do texto e retorna uma classificação correspondente, completa com uma pontuação de confiança. Por exemplo "Como está o tempo hoje? Ou "Está quente para fora?" Ou "Está indo ser agradável hoje?" São todas as maneiras de perguntar sobre a "temperatura". 
-
-Natural Language Classifier aplica técnicas de aprendizagem profunda (deep learning) para fazer previsões sobre as melhores classes predefinidas para pequenos textos. A aprendizagem profunda (deep learning) é um ramo de aprendizado de máquina (Machine Learning) baseado em um conjunto de algoritmos que tentam modelar abstrações de alto nível de dados usando um grafo profundo com várias camadas de processamento, compostas de várias transformações lineares e não lineares. A aprendizagem profunda é parte de uma família mais abrangente de métodos de aprendizado de máquina baseados na aprendizagem de representações de dados.
+O Natural Language Classifier aplica técnicas de aprendizagem profunda (deep learning) para fazer previsões sobre as melhores classes predefinidas para pequenos textos. A aprendizagem profunda (deep learning) é um ramo de aprendizado de máquina (Machine Learning) baseado em um conjunto de algoritmos que tentam modelar abstrações de alto nível de dados usando um grafo profundo com várias camadas de processamento, compostas de várias transformações lineares e não lineares. A aprendizagem profunda é parte de uma família mais abrangente de métodos de aprendizado de máquina baseados na aprendizagem de representações de dados.
 
