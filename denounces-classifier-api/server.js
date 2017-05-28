@@ -19,7 +19,3 @@ routes(app);
 app.listen(port);
 
 console.log('Denounces Classifier API server started on: ' + port);
-
-// 0 - 45 -> verde
-// 46 - 80 -> amarelo
-// 81 - 125 -> vermelho

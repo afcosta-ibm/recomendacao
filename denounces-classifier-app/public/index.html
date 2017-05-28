@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Denounces Classifier</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 <body ng-app="app">
 <section id="contact">
@@ -26,8 +26,8 @@
             <form>
                 <div class="">
                     <div class="form-group">
-                        <label for="description"> Message</label>
-                        <textarea class="form-control" id="description" placeholder="Enter Your Denounces"
+                        <label for="description"> Denounce</label>
+                        <textarea class="form-control" id="description" placeholder="Enter Your Denounce"
                                   ng-model="denounces"></textarea>
                     </div>
                     <div>
@@ -37,12 +37,19 @@
                     </div>
                 </div>
             </form>
-            <p> Urgência: {{urgency}}</p>
-            <p> Relevância: {{relevance}}</p>
-            <p> Severidade: {{severity}}</p>
+            <p> Urgência: {{result.Urgency}}</p>
+            <p> Relevância: {{result.Relevance}}</p>
+            <p> Severidade: {{result.Severity}}</p>
+            <p> Classification: {{result.Classification}}</p>
         </div>
     </div>
 </section>
 <script type="text/javascript" src="js/classifier.js"></script>
 </body>
 </html>
+
+<!--
+// 0 - 45 -> verde
+// 46 - 80 -> amarelo
+// 81 - 125 -> vermelho
+-->

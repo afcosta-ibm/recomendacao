@@ -10,6 +10,7 @@
   "author": "Eduardo Chiote",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "watson-developer-cloud": "^2.31.1"
