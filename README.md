@@ -9,11 +9,16 @@ Urgência
 Relevância
 Valor
  
+Assim, é possível utilizar esta ferramenta para realizar ações preditivas, como encaminhar as denuncias dos usuários para as pessoas corretas de acordo com sua classificação.
 
-A ferramenta está dividida em três módulos: Treinamento, Serviço e Cliente. O módulo de treinamento é responsável ...
 
-Após o treinamento, o serviço retorna informações para textos que não tenha visto antes.
+A ferramenta está dividida em três módulos: Treinamento, Serviço e Cliente. 
 
+O módulo de treinamento é responsável por ensinar a ferramenta a interprer e classificar denuncias de crimes ambientais. No processo de treinamento, a ferramenta cria três domínios de conhecimento, relativo as dimenões de classificação. A partir de exemplos, a ferramenta aprende como interpretar e classificar. Após o treinamento, o módulo de serviço passa a ser capaz de interpretar e classificar textos inéditos para a ferramenta. 
+
+O módulo serviço fornece uma API Restful para que sistemas coletores de denuncias possam classificar os relatos de crimes. 
+
+O módulo cliente fornece uma interface de usuário simples para apresentação da ferramenta.
 
 Para realizar este trabalho, a ferrmenta utiliza a API Natural Language Classifier do IBM Watson™. Este serviço compreende a intenção por trás do texto e retorna uma classificação correspondente, completa com uma pontuação de confiança. Por exemplo "Como está o tempo hoje? Ou "Está quente para fora?" Ou "Está indo ser agradável hoje?" São todas as maneiras de perguntar sobre a "temperatura". 
 
