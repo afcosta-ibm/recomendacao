@@ -1,38 +1,25 @@
 # Ferramenta de Classificação de Relatos de Crimes Ambientais
 
-A ferramenta de classificação de relatos de crimes ambientais processa textos com denuncias na forma de dados não-estruturados e em linguagem natural, classificando-as e três dimensões: Severidade, Urgência e Relevância.
+A ferramenta de classificação de relatos de crimes ambientais processa denuncias na forma de texto livre em linguagem natural. Para realizar a análise dos dados não-estruturados, a ferramenta utiliza técnicas de aprendizagem profunda (deep learning) para interpretar e inferir com confiança uma classificação sobre sentenças ou frases curtas. 
 
-Para realizar este trabalho, a ferrmenta utiliza  
+As denuncias são classificandas em três dimensões: Severidade, Urgência e Relevância.
 
+Severidade
+Urgência
+Relevância
+Valor
+ 
 
-Natural Language Classifier aplica técnicas de aprendizagem profunda para fazer previsões sobre as melhores classes predefinidas para frases curtas ou frases.
+A ferramenta está dividida em três módulos: Treinamento, Serviço e Cliente. O módulo de treinamento é responsável ...
 
-Interpretar e classificar a linguagem natural com confiança
-
-O serviço de Classificador de Linguagem Natural compreende a intenção por trás do texto e retorna uma classificação correspondente, completa com uma pontuação de confiança. Por exemplo "Como está o tempo hoje? Ou "Está quente para fora?" Ou "Está indo ser agradável hoje?" São todas as maneiras de perguntar sobre a "temperatura". Use o NLC para responder a perguntas em um contact center, criar chatbots, categorizar volumes de conteúdo escrito e muito mais.
-
-O serviço de Classificador de Linguagem Natural IBM Watson ™ aplica técnicas de aprendizagem profunda para fazer previsões sobre as melhores classes predefinidas para sentenças ou frases curtas. As classes podem acionar uma ação correspondente em um aplicativo, como direcionar um pedido para um local ou pessoa ou responder a uma pergunta. Após o treinamento, o serviço retorna informações para textos que não tenha visto antes. A resposta inclui o nome das classes superiores e valores de confiança.
-
-# Cloud Foundry CLI
-
-***Cloud Foundry CLI*** é o cliente oficial da linha de comando para [Cloud Foundry] (https://cloudfoundry.org).
-Consulte a documentação [docs CLI] (https://docs.cloudfoundry.org/cf-cli).
-
-Para ajuda, executar
-`cf help`
-
-# Bluemix
+Após o treinamento, o serviço retorna informações para textos que não tenha visto antes.
 
 
-(https://github.com/cloudfoundry/cli)
+Para realizar este trabalho, a ferrmenta utiliza a API Natural Language Classifier do IBM Watson™. 
 
+Natural Language Classifier compreende a intenção por trás do texto e retorna uma classificação correspondente, completa com uma pontuação de confiança. Por exemplo "Como está o tempo hoje? Ou "Está quente para fora?" Ou "Está indo ser agradável hoje?" São todas as maneiras de perguntar sobre a "temperatura". 
 
-`cf api https://api.ng.bluemix.net`
+Natural Language Classifier aplica técnicas de aprendizagem profunda (deep learning) para fazer previsões sobre as melhores classes predefinidas para pequenos textos. 
 
-`cf login`
+A aprendizagem profunda (deep learning) é um ramo de aprendizado de máquina (Machine Learning) baseado em um conjunto de algoritmos que tentam modelar abstrações de alto nível de dados usando um grafo profundo com várias camadas de processamento, compostas de várias transformações lineares e não lineares. A aprendizagem profunda é parte de uma família mais abrangente de métodos de aprendizado de máquina baseados na aprendizagem de representações de dados.
 
-`cf target -o <organização>`
-
-`cf push`
-
-`cf logs <aplicação>`
